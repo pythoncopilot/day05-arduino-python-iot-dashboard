@@ -9,6 +9,11 @@ Connect Arduino hardware to a Python backend that reads real-time sensor data an
 This project implements a basic IoT pipeline where an Arduino board collects sensor data and control states such as light intensity and fan speed, and transmits this data through serial communication to a Python program. The Python script acts as a bridge between hardware and software by reading incoming serial data, processing it, and serving it to a web-based dashboard. This simulates a real-world IoT system architecture where embedded devices communicate with cloud or web applications for monitoring and control.
 
 ---
+## Project Structure
+
+arduino/ → Arduino firmware (sensor data generation)
+python/  → Backend server (serial communication + API)
+web/     → Frontend dashboard (UI visualization)
 
 ## Hardware Requirements
 - Arduino Uno / Mega
